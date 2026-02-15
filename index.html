@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leslie Kay | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+}
+
+/* NAVIGATION */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:rgba(0,0,0,0.3);
+    z-index:1000;
+}
+
+nav h1{
+    font-weight:700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffeaa7;
+}
+
+/* SECTIONS */
+section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:120px 20px;
+}
+
+/* UNIVERSAL BOX */
+.box{
+    background:rgba(255,255,255,0.15);
+    padding:50px;
+    border-radius:25px;
+    width:90%;
+    max-width:900px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* HOME TEXT */
+.hero-text{
+    font-size:55px;
+    font-weight:800;
+}
+
+.sub-text{
+    font-size:22px;
+    margin-top:15px;
+    opacity:0.9;
+}
+
+/* TITLES */
+h2{
+    font-size:35px;
+    margin-bottom:25px;
+}
+
+/* CARDS */
+.card-container{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.2);
+    padding:25px;
+    width:240px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.3);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+
+@media(max-width:768px){
+    .hero-text{
+        font-size:35px;
+    }
+
+    .sub-text{
+        font-size:18px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>My Portfolio</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <div class="box">
+        <h1 class="hero-text">Hi I am Leslie Kay</h1>
+        <h2 class="sub-text">An IT student in Madredijos Community College</h2>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="box">
+        <h2>My Portfolio</h2>
+        <p><strong>Name:</strong> Leslie Kay C. Espina</p>
+        <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+        <p><strong>Year:</strong> 3rd Year College</p>
+    </div>
+</section>
+
+<!-- OBJECTIVE -->
+<section id="objective">
+    <div class="box">
+        <h2>Career Objective</h2>
+        <p>
+        To enhance my technical skills and become a successful software developer in the IT industry.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="box">
+        <h2>Skills</h2>
+        <div class="card-container">
+            <div class="card">HTML Basics</div>
+            <div class="card">CSS Styling</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="box">
+        <h2>Projects</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Basic HTML Webpage</h3>
+                <p>A beginner webpage created using basic HTML elements.</p>
+            </div>
+            <div class="card">
+                <h3>Simple Layout Design</h3>
+                <p>A basic webpage organized neatly using HTML and CSS.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="box">
+        <h2>Contact</h2>
+        <p>Email: lesliekayespina@gmail.com</p>
+        <p>Phone: 09053500813</p>
+        <p>GitHub: lesliekayespina-source</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Leslie Kay C. Espina | IT Student Portfolio
+</footer>
+
+</body>
+</html>
